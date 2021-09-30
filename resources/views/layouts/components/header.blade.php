@@ -6,11 +6,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">Home</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Posts
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/posts">All Post</a></li>
+              <li><a class="dropdown-item" href="/post/create">Create Post</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/create">Create</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/users">Show All Users</a></li>
+              <li><a class="dropdown-item" href="/user/create">Create New User</a></li>
+            </ul>
           </li>
         </ul>
         <form class="d-flex" method="POST" action="/search">
